@@ -17,11 +17,12 @@ function renderNews(newsData) {
   }
   contentWrap.innerHTML = '';
   newsData.forEach(news => {
+    const defaultImage = 'https://picsum.photos/600'
     const data = {
-        urlImage: news.urlToImage,
+        urlImage: news.urlToImage ?? defaultImage,
         date: news.publishedAt,
         title: news.title,
-        description: news.description,
+        description: news.description ?? '',
         URL: news.url
       };
 
@@ -61,3 +62,9 @@ searchInput.addEventListener('input', event => {
       });
   }
 });
+
+function showResultsMessage(message) {
+  const resultsMessage = document.getElementById('resultsMessage');
+  resultsMessage.textContent = message;
+  resultsMessage.style.display = 'flex';
+}

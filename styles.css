@@ -33,7 +33,7 @@ body {
     background: linear-gradient(
         to right,
         var(--primary-color),
-        #66bb6a
+        #83d186
     );
     z-index: -1;
 
@@ -52,7 +52,7 @@ body {
 
 #search::placeholder
 {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.);
     opacity: 0.8;
 }
 
@@ -163,4 +163,16 @@ body {
     .content-wrap {
         grid-template-columns: 1fr;
     }
+}
+
+.results-message {
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding: 1rem 0;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none; /* results-message */
 }
