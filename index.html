@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,45 +7,37 @@
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="script.js" defer></script>
 </head>
-
 <body>
-
-        
-
     <header class="header">
         <div class="header-wrap">
-            <h1>Newsroom</h1> </div>
-             <div class="nav-container">
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">World</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Politics</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Business</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Technology</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sports</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Entertainment</a></li>
-            </ul>
-        </div> 
+            <h1>Newsroom</h1>
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#" class="nav-link" data-category="general">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-category="health">Health</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-category="politics">Politics</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-category="business">Business</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-category="technology">Technology</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-category="sports">Sports</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-category="entertainment">Entertainment</a></li>
+                </ul>
+            </div>
             <input type="search" class="search" placeholder="Search news...">
         </div>
-
-     
     </header>
 
-    <div class="news-container">
-        <div class= "content-wrap" id="contentWrap">
-              <!-- News articles will be rendered here -->
-        </div>
-        <aside class="sidebar" id="sidebarNews">
-    <!-- Sidebar news cards will be rendered here -->
-        <h3 class="results-message" id="resultsMessage"></h3>
-    </div>
-    
-</aside>
+    <main class="grid-container">
+        <div class="main-content" id="main-content-area">
+            </div>
+        <aside class="sidebar" id="sidebar-news-area">
+            <h3>Trending News</h3>
+            </aside>
+    </main>
+
     <footer class="footer">
-    <div class="footer-content">
-        <span>&copy; 2025 Newsroom. All rights reserved.</span>
-    </div>
-</footer>
+        <div class="footer-content">
+            <span>&copy; 2025 Newsroom. All rights reserved.</span>
+        </div>
+    </footer>
 </body>
 </html>
