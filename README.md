@@ -1,68 +1,60 @@
-Newsroom: A Dynamic News Website
-Newsroom is a modern, responsive, and dynamic news aggregator built with Vanilla JavaScript, HTML, and CSS. It fetches real-time news articles from the NewsAPI, providing a clean and fast user experience.
+Newsroom React App
 
-Features ✨
-Dynamic Content: News articles are fetched and rendered dynamically based on user navigation.
+This project is my ALX Final Project.
 
-Multiple Categories: Browse news by categories like Home (General), Health, Politics, Business, Technology, Sports, and Entertainment.
+Overview
 
-Search Functionality: A search bar allows users to find news articles by keyword.
+Newsroom is a responsive web application built with React and Vite. It allows users to browse the latest news across various categories such as health, politics, business, technology, sports, and entertainment. The app features a clean UI, search functionality, trending news, and a modern responsive layout.
 
-Responsive Design: The layout adapts gracefully to different screen sizes, from desktops to mobile phones.
+Features
 
-Performance-Oriented UI: Implemented with skeleton loading states for a better user experience while data is being fetched.
+- Browse news by category
+- Search for news articles
+- Trending news sidebar
+- Responsive design for desktop and mobile
+- Article details modal
+- Skeleton loading states for better UX
 
-Component-Based Architecture: The JavaScript is structured into modular components, making the code reusable and easy to maintain.
+Technologies Used
 
-Tech Stack 💻
-Frontend: HTML, CSS, JavaScript
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript (ES6+)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-API: NewsAPI for fetching news headlines and search results.
+Getting Started
 
-Getting Started 🚀
-Follow these steps to get a local copy of the project up and running on your machine.
+1. Clone the repository:
 
-Prerequisites
-You need a web browser and a code editor. No special servers or dependencies are required.
+   bash
+   git clone <your-repo-url>
+   cd newsroom-react-app
+   ```
 
-Installation
-Clone the repository:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Bash
+3. Run the development server:
+   bash
+   npm run dev
 
-git clone https://github.com/Currentsparrow/NewsRoom.git
-cd NEWSROOM
-Get a NewsAPI Key:
+4. Open your browser:  
+   Visit [http://localhost:5173](http://localhost:5173) to view the app.
 
-Go to https://newsapi.org/register and sign up for a free API key.
+Project Structure
 
-The API key is required to fetch news data. The key is currently hardcoded in fetch.js, but for a production environment, it is best practice to use environment variables.
+`src/` - Main source code
+`components/` - React components
+`hooks/` - Custom hooks
+`App.jsx` - Main app component
+`App.css` - Main styles
+`public/` - Static assets
 
-Run the Project:
+Author
 
-Open the index.html file in your preferred web browser. You can do this by simply double-clicking the file or using a Live Server extension in your code editor (e.g., VS Code).
+This project was developed by Joseph Adjei as part of the ALX Software Engineering Program.
 
-File Structure 📁
-The project is organized into a clean and logical file structure:
 
-newsroom/
-├── index.html        # Main HTML file for the website
-├── styles.css        # All styling, including responsive design and animations
-├── script.js         # Core application logic, including state management and rendering
-├── components.js     # Reusable UI components (news cards, skeletons, etc.)
-└── fetch.js          # Dedicated file for all API calls and data handling
-Future Enhancements 📈
-Backend Integration: Integrate a backend to manage the API key securely.
-
-Advanced State Management: Implement a more advanced state management pattern for larger applications.
-
-User Authentication: Add user accounts to allow for personalized news feeds and saved articles.
-
-Pagination: Implement pagination to load more articles as the user scrolls, improving performance.
-
-Accessibility: Improve accessibility features for users with disabilities (e.g., ARIA roles, better keyboard navigation).
-
-Credits 🤝
-NewsAPI: For providing the API used to power this website.
-
-Unsplash/Picsum: For placeholder images.
+Note: This project was created from scratch for the ALX final project and demonstrates skills in React, responsive design, and modern web development practices.

@@ -91,8 +91,9 @@ body {
     grid-template-columns: 3fr 1fr;
     gap: 2rem;
     padding: 2rem 1rem;
-    max-width: 90rem;
-    margin: 0 auto;
+    width: 100vw;
+    max-width: none;
+    margin: 0;
 }
 
 .main-content {
@@ -156,7 +157,6 @@ body {
     text-decoration: underline;
 }
 
-/* Skeleton Loading styles */
 .skeleton-card {
     background-color: var(--card-bg);
     border-radius: 8px;
@@ -279,35 +279,90 @@ body {
     font-size: 1rem;
 }
 
-@media screen and (max-width: 1000px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-    .sidebar {
-        position: static;
-        max-width: none;
-        max-height: none;
-        top: auto;
-    }
+.modal-backdrop {
+  position: fixed;
+  z-index: 2000;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 95vw;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s;
+}
+.modal-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #888;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-    .header-wrap {
-        flex-direction: column;
-        text-align: center;
-    }
-    .nav-container {
-        flex-grow: unset;
-        width: 100%;
-        margin-top: 1rem;
-    }
-    .nav-menu {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .search {
-        width: 100%;
-        margin-top: 1rem;
-    }
+.fade-in {
+  animation: fadeIn 0.7s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+  }
+  .sidebar {
+    position: static;
+    max-width: 100%;
+    min-width: 0;
+    margin-top: 1.5rem;
+    max-height: none;
+    overflow-y: visible;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+  .sidebar.open {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .sidebar-toggle-btn {
+    display: block;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 1rem auto;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+@media (min-width: 601px) {
+  .sidebar-toggle-btn {
+    display: none;
+  }
 }

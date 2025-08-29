@@ -1,43 +1,32 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Newsroom</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="script.js" defer></script>
-</head>
-<body>
-    <header class="header">
-        <div class="header-wrap">
-            <h1>Newsroom</h1>
-            <div class="nav-container">
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="#" class="nav-link" data-category="general">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link" data-category="health">Health</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link" data-category="politics">Politics</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link" data-category="business">Business</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link" data-category="technology">Technology</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link" data-category="sports">Sports</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link" data-category="entertainment">Entertainment</a></li>
-                </ul>
-            </div>
-            <input type="search" class="search" placeholder="Search news...">
-        </div>
-    </header>
-
-    <main class="grid-container">
-        <div class="main-content" id="main-content-area">
-            </div>
-        <aside class="sidebar" id="sidebar-news-area">
-            <h3>Trending News</h3>
-            </aside>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <span>&copy; 2025 Newsroom. All rights reserved.</span>
-        </div>
-    </footer>
-</body>
+    <meta name="description" content="Stay updated with the latest news in health, politics, business, technology, sports, and entertainment." />
+    <meta name="theme-color" content="#4CAF50" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+      html, body {
+        height: 100%;
+        min-height: 100%;
+        background: #F5F5F5;
+      }
+      #root {
+        min-height: 100vh;
+        min-width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>This app requires JavaScript to run. Please enable JavaScript in your browser.</strong>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
