@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNewsApi } from './hooks/useNewsApi';
+import { useNewsApi } from './hooks/useNewsApi';  
 import { NewsCard } from './components/NewsCard';
 import { SidebarCard } from './components/SidebarCard';
 import { SkeletonCard } from './components/SkeletonCard';

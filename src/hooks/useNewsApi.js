@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const API_KEY = '3c9f8c93bf6e478fb4526cad5004484a';
+const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
 const BASE_URL = 'https://newsapi.org/v2';
 
 async function handleResponse(response) {
